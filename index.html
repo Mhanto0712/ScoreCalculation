@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index,follow" />
+    <meta name="author" content="劉洧瑄" />
+    <meta name="description" content="" />
+    <title>成績計算網站</title>
+    <link rel="icon" href="./icons/score.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <section class="animationWrapper">
+      <section class="animation">
+        <div class="mathImg">
+          <img src="./img/math.jpg" alt="開場動畫圖片" />
+        </div>
+      </section>
+      <div class="slide"></div>
+    </section>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Grade Analysis</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="title">
+        <h1>Grade Input Form</h1>
+      </section>
+      <section class="middle">
+        <div class="order">
+          <button class="btn descending">降序排序</button>
+          <button class="btn ascending">升序排序</button>
+        </div>
+        <div class="form">
+          <form action="">
+            <div class="input">
+              <input
+                class="classCategory"
+                type="text"
+                placeholder="class category"
+                list="opt"
+              />
+              <input
+                class="classNumber"
+                type="text"
+                placeholder="class number"
+              />
+              <input
+                class="credits"
+                type="number"
+                placeholder="credits"
+                min="0"
+                max="6"
+              />
+              <select class="score" name="score">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="D-">D-</option>
+                <option value="F">F</option>
+              </select>
+              <button class="trash">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </form>
+          <form action="">
+            <div class="input">
+              <input
+                class="classCategory"
+                type="text"
+                placeholder="class category"
+                list="opt"
+              />
+              <input
+                class="classNumber"
+                type="text"
+                placeholder="class number"
+              />
+              <input
+                class="credits"
+                type="number"
+                placeholder="credits"
+                min="0"
+                max="6"
+              />
+              <select class="score" name="score">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="D-">D-</option>
+                <option value="F">F</option>
+              </select>
+              <button class="trash">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </form>
+          <form action="">
+            <div class="input">
+              <input
+                class="classCategory"
+                type="text"
+                placeholder="class category"
+                list="opt"
+              />
+              <input
+                class="classNumber"
+                type="text"
+                placeholder="class number"
+              />
+              <input
+                class="credits"
+                type="number"
+                placeholder="credits"
+                min="0"
+                max="6"
+              />
+              <select class="score" name="score">
+                <option value=""></option>
+                <option value="A">A</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B">B</option>
+                <option value="B-">B-</option>
+                <option value="C+">C+</option>
+                <option value="C">C</option>
+                <option value="C-">C-</option>
+                <option value="D+">D+</option>
+                <option value="D">D</option>
+                <option value="D-">D-</option>
+                <option value="F">F</option>
+              </select>
+              <button class="trash">
+                <i class="fa-solid fa-trash"></i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <button class="add">
+          <i class="fa-solid fa-plus"></i>
+        </button>
+      </section>
+      <section class="result">
+        <div class="result">
+          <p>Your semester</p>
+          <p>GPA:</p>
+          <h2>0.00</h2>
+        </div>
+      </section>
+    </main>
+    <!-- datalist for classCategory -->
+    <datalist id="opt">
+      <option value="ACCT">Accounting</option>
+      <option value="ASL">American Sign Language</option>
+      <option value="ANTH">Anthropology</option>
+      <option value="ART">Art</option>
+      <option value="BIOL">Biological Science</option>
+      <option value="BUSM">Business Mgt</option>
+      <option value="CRDEV">Career Development</option>
+      <option value="CHEM">Chemistry</option>
+      <option value="CHIN">Chinese</option>
+      <option value="COMM">Communication Studies</option>
+      <option value="CIS">Computer & Information Sciences</option>
+      <option value="CS">Computer Science</option>
+      <option value="CRMJ">Criminal Justice</option>
+      <option value="ECON">Economics</option>
+      <option value="EDU">Education</option>
+      <option value="ELED">Elementary Education</option>
+      <option value="EMGT">Emergency Management</option>
+      <option value="ENGL">English</option>
+      <option value="EIL">English as Int'l Language</option>
+      <option value="ENTR">Entrepreneurship</option>
+      <option value="EXS">Exercise Sport Science</option>
+      <option value="FILM">Film</option>
+      <option value="FIN">Finance</option>
+      <option value="FORS">Forensic Science</option>
+      <option value="FREN">French</option>
+      <option value="GEOG">Geography</option>
+      <option value="HAWN">Hawaiian</option>
+      <option value="HWST">Hawaiian Studies</option>
+      <option value="HLTH">Health</option>
+      <option value="HIST">History</option>
+      <option value="HEC">Home Economics</option>
+      <option value="HTM">Hospitality Tourism Mgt</option>
+      <option value="HUM">Humanities</option>
+      <option value="IS">Information System</option>
+      <option value="IT">Information Technology</option>
+      <option value="ICS">International Cultural Studies</option>
+      <option value="IPB">Intercultural Peacebuilding</option>
+      <option value="JPN">Japanese</option>
+      <option value="LING">Linguistics</option>
+      <option value="AMOR">Maori</option>
+      <option value="MATH">Mathematics</option>
+      <option value="MUSC">Music</option>
+      <option value="OCEN">Oceanography</option>
+      <option value="PAIS">Pacific Island Studies</option>
+      <option value="PHSC">Physical Science</option>
+      <option value="POSC">Political Science</option>
+      <option value="PSYC">Psychology</option>
+      <option value="PMGT">Public Management</option>
+      <option value="REL">Religion</option>
+      <option value="SCI">Science</option>
+      <option value="SAMN">Samoan</option>
+      <option value="SCED">Secondary Education</option>
+      <option value="SOCW">Social Work</option>
+      <option value="SPAN">Spanish</option>
+      <option value="SPED">Special Education</option>
+      <option value="STDEV">Student Development</option>
+      <option value="TESOL">TESOL</option>
+      <option value="THEA">Theatre</option>
+      <option value="TONG">Tongan</option>
+      <option value="WLNG">World Language</option>
+    </datalist>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TimelineMax.min.js"
+      integrity="sha512-JDer0eRwHrXLlg33px012cnCOsFYZrF78MsmlnMrf1AUnyuBybhCM9jCrlCTNr0X9YhWBRK57Y/QHs05vS/bcg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.1/TweenMax.min.js"
+      integrity="sha512-CPonrVVNaBUnJ5fd+Oqh6zA9cx4gvAjz1XmjcuP5Atrg09az+vRm1O8khaiebTQ8brf6f550++WXoFOpDoHSKw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
